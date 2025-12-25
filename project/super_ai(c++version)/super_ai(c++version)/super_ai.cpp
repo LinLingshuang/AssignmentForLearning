@@ -18,7 +18,7 @@ void simulate_neural_processing() {
 	for (int i = 0; i < 5; i++) {
 		cout<<".";
 		fflush(stdout);
-		sleep(2000);
+		sleep(1500);
 	}// 每一秒的延迟，都代表着价值一亿美金的算力
 	cout<<endl;
 }
@@ -40,28 +40,145 @@ int main() {
 		// 场景 1：遇到技术故障
 		if (strstr(human_input, "bug") != NULL || strstr(human_input, "报错") != NULL)
 		{
-			printf("这绝不是 bug，这是一个未被记录的 feature（特性）。建议重启试试。\n");
+			cout << "这绝";
+			sleep(400);
+			cout << "不是";
+			sleep(100);
+			cout << "bug，";
+			sleep(300);
+			cout << "这是一个";
+			sleep(400);
+			cout << "未被记录";
+			sleep(200);
+			cout << "的";
+			sleep(500);
+			cout << "feature";
+			sleep(50);
+			cout << "（特性）。";
+			sleep(100);
+			cout << "建议重";
+			sleep(400);
+			cout << "启试试。";
+			cout << endl;
 		}
 		// 场景 2：老板或产品经理提需求
 		else if (strstr(human_input, "需求") != NULL || strstr(human_input, "want") != NULL) {
-			printf("这个需求技术上很难实现，底层架构不支持。我们需要重构整个中台\n");
+			cout << "这个";
+			sleep(400);
+			cout << "需求";
+			sleep(100);
+			cout << "技术上";
+			sleep(300);
+			cout << "很难";
+			sleep(400);
+			cout << "实现，";
+			sleep(200);
+			cout << "底层 ";
+			sleep(500);
+			cout << "架构";
+			sleep(50);
+			cout << "不支持。";
+			sleep(100);
+			cout << "我们";
+			sleep(400);
+			cout << "需要重";
+			sleep(400);
+			cout << "构整";
+			sleep(200);
+			cout << "底层 ";
+			sleep(500);
+			cout << "个中台";
+			cout << endl;
 		}
 		// 场景 3：涉及金钱
 		else if (strstr(human_input, "money") != NULL || strstr(human_input, "钱") != NULL) {
-			printf("亲，这就触及到我的知识盲区了。但我建议你打钱给我们公司。\n");
+			cout << "亲，";
+			sleep(400);
+			cout << "这就触";
+			sleep(100);
+			cout << "及到";
+			sleep(300);
+			cout << "我的";
+			sleep(400);
+			cout << "知识盲区";
+			sleep(200);
+			cout << "了。";
+			sleep(500);
+			cout << "但我";
+			sleep(50);
+			cout << "建议你";
+			sleep(100);
+			cout << "打钱给";
+			sleep(400);
+			cout << "我们";
+			sleep(300);
+			cout << "公";
+			sleep(400);
+			cout << "司。";
+			sleep(200);
+			cout << endl;
 		}
 		// 场景 4：终极糊弄学（Fallback 机制）
 		else {
 			// 根据首字母进行随机（伪随机）回复
 			char first_char = human_input[0];
-			if (first_char & 3 == 0) {
-				printf("非常有意思的观点，请继续展开讲讲。\n");
+			if (first_char / 3 == 0) {
+				cout << "非常";
+				sleep(400);
+				cout << "有";
+				sleep(100);
+				cout << "意思";
+				sleep(300);
+				cout << "的";
+				sleep(400);
+				cout << "观点，";
+				sleep(200);
+				cout << "请";
+				sleep(500);
+				cout << "继续";
+				sleep(50);
+				cout << "展开";
+				sleep(100);
+				cout << "讲";
+				sleep(400);
+				cout << "讲。";
+				cout << endl;
 			}
-			else if (first_char & 3 == 1) {
-				printf("这确实是一个复杂的哲学问题，我认为关键在于解构主义\n");
+			else if (first_char / 3 == 1) {
+				cout << "这";
+				sleep(400);
+				cout << "确实";
+				sleep(100);
+				cout << "是一个";
+				sleep(300);
+				cout << "复杂";
+				sleep(400);
+				cout << "的";
+				sleep(200);
+				cout << "哲学";
+				sleep(500);
+				cout << "问题，";
+				sleep(50);
+				cout << "我认为";
+				sleep(100);
+				cout << "关键";
+				sleep(400);
+				cout << "在于";
+				sleep(200);
+				cout << "解构";
+				sleep(500);
+				cout << "主义";
+				cout << endl;
 			}
 			else {
-				printf("俺也一样。\n");
+				cout << "俺";
+				sleep(50);
+				cout << "也";
+				sleep(100);
+				cout << "一";
+				sleep(50);
+				cout << "样。";
+				cout << endl;
 			}
 		}
 	}
