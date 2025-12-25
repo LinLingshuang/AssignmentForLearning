@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="super_ai(c++version)/super_ai(c++version).vcxproj" Id="773db22d-b006-43a0-91e4-d5b2682b0239" />
+</Solution>

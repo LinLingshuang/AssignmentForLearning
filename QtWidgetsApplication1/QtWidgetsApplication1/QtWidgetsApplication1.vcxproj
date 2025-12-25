@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07DBDDFD-E07E-4E07-B3E3-1E33185B55B3}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.10.1_msvc2022_64</QtInstall>
+    <QtModules>core;gui;widgets;multimedia</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.10.1_msvc2022_64</QtInstall>
+    <QtModules>core;gui;widgets;multimedia</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="areadamagebullet.cpp" />
+    <ClCompile Include="audiomanager.cpp" />
+    <ClCompile Include="buildmanager.cpp" />
+    <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="bulletmanager.cpp" />
+    <ClCompile Include="EncyclopediaData.cpp" />
+    <ClCompile Include="EncyclopediaDialog.cpp" />
+    <ClCompile Include="explorationmarker.cpp" />
+    <ClCompile Include="flymonsters.cpp" />
+    <ClCompile Include="gameOverDialog.cpp" />
+    <ClCompile Include="gameSaveData.cpp" />
+    <ClCompile Include="gameWidget.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="map.cpp" />
+    <ClCompile Include="menuWidget.cpp" />
+    <ClCompile Include="monster.cpp" />
+    <ClCompile Include="monsterSpawner.cpp" />
+    <ClCompile Include="normalmonster.cpp" />
+    <ClCompile Include="pauseDialog.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="playerUI.cpp" />
+    <ClCompile Include="previewtower.cpp" />
+    <ClCompile Include="resource.cpp" />
+    <ClCompile Include="resourcemanager.cpp" />
+    <ClCompile Include="settingsWidget.cpp" />
+    <ClCompile Include="playerbase.cpp" />
+    <ClCompile Include="tower.cpp" />
+    <ClCompile Include="towerButton.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="buildmanager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="bullet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="bulletmanager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="explorationmarker.h" />
+    <QtMoc Include="gameOverDialog.h" />
+    <QtMoc Include="gameSaveData.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="previewtower.h" />
+    <QtMoc Include="structVector.h" />
+    <QtMoc Include="playerbase.h" />
+    <QtMoc Include="areadamagebullet.h" />
+    <QtMoc Include="audiomanager.h" />
+    <ClInclude Include="EncyclopediaData.h" />
+    <QtMoc Include="EncyclopediaDialog.h" />
+    <QtMoc Include="flymonsters.h" />
+    <QtMoc Include="normalmonster.h" />
+    <ClInclude Include="utils.h" />
+    <QtMoc Include="towerButton.h" />
+    <QtMoc Include="tower.h" />
+    <QtMoc Include="settingsWidget.h" />
+    <QtMoc Include="saveConflictWidget.h" />
+    <QtMoc Include="resourcemanager.h" />
+    <QtMoc Include="resource.h" />
+    <QtMoc Include="playerUI.h" />
+    <QtMoc Include="player.h" />
+    <QtMoc Include="pauseDialog.h" />
+    <QtMoc Include="monsterSpawner.h" />
+    <QtMoc Include="monster.h" />
+    <QtMoc Include="menuWidget.h" />
+    <QtMoc Include="gameWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="gameWidget.ui" />
+    <QtUic Include="menuWidget.ui" />
+    <QtUic Include="pauseDialog.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="png.qrc" />
+    <QtRcc Include="music.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="tileLayer.txt" />
+    <Text Include="tileState.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

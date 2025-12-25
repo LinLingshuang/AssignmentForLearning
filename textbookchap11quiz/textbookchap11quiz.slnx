@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="textbookchap11quiz11-3/textbookchap11quiz11-3.vcxproj" />
+  <Project Path="textbookchap11quiz11-4/textbookchap11quiz11-4.vcxproj" />
+  <Project Path="textbookchap11quiz11-6/textbookchap11quiz11-6.vcxproj" />
+  <Project Path="textbookchap11quiz11-8/textbookchap11quiz11-8.vcxproj" />
+  <Project Path="textbookchap11quiz11-9/textbookchap11quiz11-9.vcxproj" />
+</Solution>

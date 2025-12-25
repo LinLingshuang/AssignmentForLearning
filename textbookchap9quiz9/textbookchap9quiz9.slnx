@@ -1,0 +1,16 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="textbookchap9quiz9-1/textbookchap9quiz9-1.vcxproj" Id="e696a51f-b962-4302-82ef-fe1b53a32f1f" />
+  <Project Path="textbookchap9quiz9-10/textbookchap9quiz9-10.vcxproj" Id="1a6c079e-0249-40b0-aeea-af75496a5159" />
+  <Project Path="textbookchap9quiz9-12/textbookchap9quiz9-12.vcxproj" Id="8ac2aede-1150-41bd-a07a-cbb388724b04" />
+  <Project Path="textbookchap9quiz9-13/textbookchap9quiz9-13.vcxproj" Id="e0e7e35c-ebcb-4245-beec-a395876f15bb" />
+  <Project Path="textbookchap9quiz9-15/textbookchap9quiz9-15.vcxproj" Id="522b847d-f275-44ac-a9ac-ea66f26e1bde" />
+  <Project Path="textbookchap9quiz9-17/textbookchap9quiz9-17.vcxproj" Id="6e3c0bab-825b-4191-8eb1-1622d4cb12ab" />
+  <Project Path="textbookchap9quiz9-19/textbookchap9quiz9-19.vcxproj" Id="99712b07-ef00-4be6-8b8c-eaaa265eee3c" />
+  <Project Path="textbookchap9quiz9-4/textbookchap9quiz9-4.vcxproj" Id="188f28ab-f300-4ffb-a033-5dcd545c1983" />
+  <Project Path="textbookchap9quiz9-5/textbookchap9quiz9-5.vcxproj" Id="5843d0c5-5877-4415-8762-51884155168d" />
+  <Project Path="textbookchap9quiz9-9/textbookchap9quiz9-9.vcxproj" Id="da8e326f-89e1-4937-81da-2356cfbc3db2" />
+</Solution>

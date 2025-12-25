@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="textbookchap8quiz8-4/textbookchap8quiz8-4.vcxproj" Id="87d38169-8e51-4768-84a7-0c743bd40ff8" />
+  <Project Path="textbookchap8quiz8-5/textbookchap8quiz8-5.vcxproj" Id="5cdf4fd9-909f-46df-a12b-bb71ca6d696e" />
+  <Project Path="textbookchap8quiz8-6/textbookchap8quiz8-6.vcxproj" Id="d88c9d50-d0d0-4250-8894-e6564962da6c" />
+  <Project Path="textbookchap8quiz8-7/textbookchap8quiz8-7.vcxproj" Id="4da55a5c-cec7-49e4-9006-e1bc7b6eeef3" />
+</Solution>

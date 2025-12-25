@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>music/bgm-new.wav</file>
+        <file>music/biu-new.wav</file>
+        <file>music/break-new.wav</file>
+        <file>music/cannon-new.wav</file>
+        <file>music/chop-new.wav</file>
+        <file>music/cut-new.wav</file>
+        <file>music/di.2-new.wav</file>
+        <file>music/di-new.wav</file>
+        <file>music/game_default-new.wav</file>
+        <file>music/mining-new.wav</file>
+        <file>music/monster_death-new.wav</file>
+        <file>music/monster-new.wav</file>
+        <file>music/obtain-new.wav</file>
+        <file>music/shoot_2-new.wav</file>
+        <file>music/shoot_3-new.wav</file>
+        <file>music/shoot_4-new.wav</file>
+        <file>music/shoot-new.wav</file>
+        <file>music/start_bgm-new.wav</file>
+        <file>music/upgrade-new.wav</file>
+        <file>music/walk-new.wav</file>
+        <file>music/zi-new.wav</file>
+    </qresource>
+</RCC>
