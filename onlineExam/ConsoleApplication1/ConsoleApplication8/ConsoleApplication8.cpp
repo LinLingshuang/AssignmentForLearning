@@ -103,7 +103,7 @@ public:
         }
     }
 
-    void show() {
+    void show()const {
         if (!invalid) {
             cout << id << ": " << chinese << " " << math << " " << english << " " << physics << " " << chemistry << " " << biology << " " << total << endl;
             return;

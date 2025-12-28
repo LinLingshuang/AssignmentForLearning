@@ -16,19 +16,20 @@
 110 ccc 19
 【输出样例】
 
-1    aaa     22          
-45     bbb     23      
+  1     aaa     22          
+ 45     bbb     23      
 110     ccc     19   
-54     ddd     20                                      
+ 54     ddd     20                                      
 110     ccc     19          
-54     ddd     20             
-1     aaa     22          
-45     bbb     23
+ 54     ddd     20             
+  1     aaa     22          
+ 45     bbb     23
 【样例说明】
 从键盘输入四个学生记录，分别按姓名和年龄排序并输出。*/
 #include<iostream>
 #include<string>
 #include<vector>
+#include<iomanip>
 using namespace std;
 
 int main() {
@@ -69,13 +70,13 @@ int main() {
 				age1[j + 1] = temp3;
 
 			}
-
-
-
 		}
 	}
 	for (int i = 0; i < n; i++) {
-		cout << coutnum1[i] << " " << names1[i] << " " << age1[i] << endl;
+		cout << setiosflags(ios_base::right) << 
+			setw(3) << coutnum1[i]  <<
+			setw(6) << names1[i]  <<
+			setw(3) << age1[i] << endl;
 	}
 	cout << endl;
 
@@ -111,15 +112,14 @@ int main() {
 					age2[j + 1] = temp3;
 
 				}
-
 			}
-
-
 		}
 	}
 	for (int i = 0; i < n; i++) {
-		cout << coutnum2[i] << " " << names2[i] << " " << age2[i] ;
+		cout << setiosflags(ios_base::right) <<
+			setw(3) << coutnum2[i] <<
+			setw(6) << names2[i] <<
+			setw(3) << age2[i];
 		if (i != n - 1)cout << endl;
 	}
-
 }

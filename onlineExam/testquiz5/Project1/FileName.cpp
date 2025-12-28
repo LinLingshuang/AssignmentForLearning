@@ -22,47 +22,53 @@ a-c-u-B
 abcdefghijklmnopqrstu-B
 【样例说明】
 扩展输入a-c-u为：abcdefghijklmnopqrstu，而B比u值小，所以无法扩展，直接输出。*/
+
 #include<iostream>
+#include<string>
 #include<vector>
 using namespace std;
 
-int main() {
-	int n;
-	cin >> n;
-	vector<int>a(n);
-	vector<int>b(n);
-	int max = 0;
-	int resultnum=0;
-	for (int i = 0; i < n; i++) {
-		cin >> a[i];
-		int sum = 1;
-		for (int j = 0; j <= i; j++) {
-			if (a[j] == a[i]) {
-				sum++;
+void expand(string& s1, string& s2) {
+	int first = 0, end = 0;
+	bool isexpanding = false;
+	for (int i = 0; i < s1.length(); i++) {
+		if (s1[i] == '-') {
+			isexpanding = true;
+		}
+		if (!isexpanding) {
+			if(first!=i)
+			s2.push_back(s1[first]);
+			first = i;
+		}
+		if (isexpanding && s1[i] != '-') {
+			end = i;
+			if (s1[first] < s1[end]) {
+				for (int j = 0; j < s1[end] - s1[first]; j++) {
+					s2.push_back(s1[first]+j);
+				}
+				first = end;
+				isexpanding = false;
+			}
+			else if (s1[first] >= s1[end]) {
+				for (int j = first; j < end; j++) {
+					s2.push_back(s1[j]);
+				}
+				first = end;
+				isexpanding = false;
 			}
 		}
-		if (sum > max) {
-			resultnum = 0;
-			max = sum;
-			b[resultnum] = a[i];
+		if (i == s1.length() - 1) {
+			s2.push_back(s1[i]);
+		}
 
-		}
-		else if (sum == max) {
-			resultnum++;
-			b[resultnum] = a[i];
-		}
 	}
-	for (int i = 0; i <= resultnum; i++) {
-		for (int j = 0; j < resultnum - 1; j++) {
-			if (b[j] < b[j + 1]) {
-				int temp = b[j];
-				b[j] = b[j + 1];
-				b[j + 1] = temp;
-			}
-		}
-	}
-	for (int i = 0; i <= resultnum; i++) {
-		cout << b[i] << " " << max-1 << endl;
-	}
-	
+
+
+}
+
+int main() {
+	string oldstr, newstr;
+	getline(cin, oldstr);
+	expand(oldstr, newstr);
+	cout << newstr;
 }
