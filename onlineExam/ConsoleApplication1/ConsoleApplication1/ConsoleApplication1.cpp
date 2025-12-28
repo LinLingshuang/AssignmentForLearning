@@ -89,6 +89,15 @@ int main()
             if (temp2 == "a" || temp2 == "an" || temp2 == "the" || temp2 == "and") {
                 continue;
             }
+            bool haveDigit = false;
+            for (char c : temp2) {
+                if (isdigit(c)) {
+                    haveDigit = true;
+                }
+            }
+            if (haveDigit) {
+                continue;
+            }
             string temp4;
             char *temp3 = new char[20];
             int j = 0;
@@ -117,13 +126,29 @@ int main()
     outfile.open("crossout.txt");
 
     for (map<string, vector<int>>::iterator iter = str.begin(); iter != str.end(); ++iter) {
+        cout << iter->first << ":";
         outfile << iter->first << ":";
+        int tempArray[100] = { 0 };
+        int j = 0;
         for (vector<int>::iterator iter1 = str[iter->first].begin(); iter1 != str[iter->first].end(); ++iter1) {
-            outfile << *iter1;
-            if (iter1 != str[iter->first].end()) {
-                outfile << ',';
+            bool haveDigit = false;
+            for (int i = 0; i < 100; i++) {
+                if (tempArray[i] == *iter1) {
+                    haveDigit = true;
+                }
             }
+            if (!haveDigit) {
+                tempArray[j] = *iter1;
+                cout << tempArray[j];
+                outfile << tempArray[j];
+                if (iter1 != str[iter->first].end() - 1) {
+                    cout << ',';
+                    outfile << ',';
+                }
+            }
+            j++;
         }
+        cout << endl;
         outfile << endl;
     }
 
