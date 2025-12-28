@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="textBookChap10quiz10-1/textBookChap10quiz10-1.vcxproj" Id="32051bf0-3c25-469d-b86c-0877104f2774" />
+  <Project Path="textBookChap10quiz10-3/textBookChap10quiz10-3.vcxproj" Id="152df07f-30e5-401d-9fc8-ac9855514e2b" />
+  <Project Path="textBookChap10quiz10-5/textBookChap10quiz10-5.vcxproj" Id="22b8a41e-a93b-43e9-897d-fcf92f7d6d42" />
+</Solution>
