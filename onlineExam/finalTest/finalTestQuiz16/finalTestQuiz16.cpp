@@ -1,11 +1,49 @@
-﻿// finalTestQuiz16.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿/*16. 字符位置统计
+【问题描述】
+编写一个程序，输入一个字符串str(长度不超过30)和一个字符ch，通过指针查找、统计字符串str中字符ch出现的位置(区分大小写)。
+【输入形式】
+输入一个字符串str，以及一个字符ch
+【输出形式】
+若ch在str中存在，输出位置，位置之间以空格分隔
+若ch在str中不存在，输出NULL
+输出后面无换行符
+【样例输入1】
+Shanghaijiaotongdaxue h
+【样例输出1】
+1 5
+【样例输入2】
+Helloworld @
+【样例输出2】
+NULL*/
 
 #include <iostream>
+#include<string>
+
+using namespace std;
+
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	string str;
+	char del;
+
+	cin >> str >> del;
+	int place = 0;
+	bool haveFind = false;
+	for (char c : str) {
+		if (c == del) {
+			cout << place << ' ';
+			haveFind = true;
+		}
+
+		place++;
+	}
+	if (!haveFind) {
+		cout << "NULL";
+	}
+
+
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

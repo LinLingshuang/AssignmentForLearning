@@ -1,11 +1,48 @@
-﻿// finalTestQuiz4.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
-
+﻿/*4. 求π的值
+【问题描述】
+已知可以用下列公式计算π的近似值。给定一个π的近似值e，编程利用下列公式求得最接近e并且小于e的近似值π，以及迭代次数n（大于等于1）。
+π/2 = (2/1 x 2/3) x (4/3 x 4/5) x (6/5 x 6/7) x ...x [2n/(2n-1)x2n/(2n+1)]
+【输入形式】
+从控制台输入e( e大于2.6666667，小于3.1415926)的值。
+【输出形式】
+输出最接近e并且小于e的近似值π，以及迭代次数n（以一个空格分隔，并且输出π时要求小数点后保留7位有效数字）。
+【样例输入】
+3.12
+【样例输出】
+3.1195472 35
+【样例说明】
+输入的π的近似值e为3.12，当n为35时计算的π值为3.1195472，小于给定的精度值。当n为36时，计算的π值为3.1201491，
+大于给定的精度值，所以利用上述计算公式求得的最接近e并且小于e的π的近似值为3.1195472，对应的迭代次数为35。
+注意：
+为保证计算精度，请使用double数据类型保存计算数据。*/
 #include <iostream>
+#include <iomanip> 
+using namespace std;
+
+double fun(double a, double& result, double& sum) {
+	double temp = result;
+	temp *= ((2 * sum) / (2 * sum - 1)) * ((2 * sum) / (2 * sum + 1));
+	if (temp*2>=a) {
+		return sum-1;
+	}
+	else {
+		sum++;
+		result = temp;
+		return fun(a, result, sum);
+	}
+
+}
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	double input;
+	cin >> input;
+	double sum = 1;
+	double result = 1;
+	int resultnum=fun(input, result, sum);
+	cout << fixed << setprecision(7); // 固定7位小数
+	cout << 2*result << ' ' << resultnum;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

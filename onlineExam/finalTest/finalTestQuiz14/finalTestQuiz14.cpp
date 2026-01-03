@@ -1,11 +1,67 @@
-﻿// finalTestQuiz14.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿/*14. 整数加一
+【问题描述】
+
+编写一个程序，读入一个以字符串表示的非负整数（串中每个字符代表一个数字），输出该正整数加一后的结果。
+
+【输入形式】
+
+输入一行为正整数字符串，该正整数最前不包含字符'0'（除非该正整数等于0），正整数字符串的长度小于50（即正整数的大小小于10^50）
+
+【输出形式】
+
+输出一行为加一后的正整数字符串
+
+【样例输入1】
+
+10000
+【样例输出1】
+
+10001
+【样例输入2】
+
+999999999
+
+【样例输出2】
+
+1000000000*/
 
 #include <iostream>
+#include<string>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    string a;
+
+    cin >> a;
+
+    bool plusUP = false;
+
+    for (int i = a.length() - 1; i >= 0; i--) {
+        if (a[i] == '9' && i == a.length() - 1) {
+            a[i] = '0';
+            plusUP = true;
+        }
+        else if (i == a.length() - 1) {
+            a[i] = a[i] + 1;
+            plusUP = false;
+        }
+        else if (a[i] == '9' && plusUP) {
+            a[i] = '0';
+            plusUP = true;
+        }
+        else if (plusUP) {
+            a[i] = a[i] + 1;
+            plusUP = false;
+        }
+
+    }
+
+    if (plusUP) {
+        cout << 1 << a;
+        return 0;
+    }
+    cout << a;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

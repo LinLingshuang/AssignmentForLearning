@@ -3,8 +3,39 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="9/9.vcxproj" Id="4e7338a9-5299-4f5a-97cb-6d625bbc0837" />
   <Project Path="finalTestQuiz1/finalTestQuiz1.vcxproj" Id="554cac4b-df9d-4e96-93ae-e3bc264fe518" />
+  <Project Path="finalTestQuiz10/finalTestQuiz10.vcxproj" Id="7a25f6e6-5965-44b8-b66a-437333615c9c" />
+  <Project Path="finalTestQuiz11/finalTestQuiz11.vcxproj" Id="84224f3b-042c-442c-a32b-51c94e108500" />
+  <Project Path="finalTestQuiz12/finalTestQuiz12.vcxproj" Id="22c633d9-187e-41f7-96cd-d2cb270f46d6" />
+  <Project Path="finalTestQuiz13/finalTestQuiz13.vcxproj" Id="dda89919-6ed7-4836-94b3-8dda32083d34" />
+  <Project Path="finalTestQuiz14/finalTestQuiz14.vcxproj" Id="001c64d4-f398-4c1f-8d5d-750031e3baeb" />
+  <Project Path="finalTestQuiz15/finalTestQuiz15.vcxproj" Id="0fd8b6c4-ac34-4fc5-b44d-624d81d1a8e6" />
+  <Project Path="finalTestQuiz16/finalTestQuiz16.vcxproj" Id="afe1aa85-f5b5-44c2-8023-36f8cbb0e5e7" />
+  <Project Path="finalTestQuiz17/finalTestQuiz17.vcxproj" Id="c4185c80-b5d5-4a3c-bdf2-c286ca7ada99" />
+  <Project Path="finalTestQuiz18/finalTestQuiz18.vcxproj" Id="f8859945-7cc6-495a-aa69-230b3d1cdd30" />
+  <Project Path="finalTestQuiz19/finalTestQuiz19.vcxproj" Id="6b394085-446b-4f88-8c6e-67e2ba84f2c0" />
+  <Project Path="finalTestQuiz2/finalTestQuiz2.vcxproj" Id="7af76473-fe5e-498e-9e56-1d770ac534e6" />
+  <Project Path="finalTestQuiz20/finalTestQuiz20.vcxproj" Id="d2de3aa0-ded6-4e7a-b3f3-9b5f22b75680" />
   <Project Path="finalTestQuiz21/finalTestQuiz21.vcxproj" Id="e2db25e2-9f47-41e3-b02b-ec5508e8066d" />
+  <Project Path="finalTestQuiz22/finalTestQuiz22.vcxproj" Id="87c01aed-8f7b-4d59-8566-b1daac6c8250" />
+  <Project Path="finalTestQuiz23/finalTestQuiz23.vcxproj" Id="35ea2b2e-c0b5-443f-b967-25c1365bee6d" />
+  <Project Path="finalTestQuiz24/finalTestQuiz24.vcxproj" Id="4a455d36-36fe-4729-a584-18d930a61e3b" />
+  <Project Path="finalTestQuiz25/finalTestQuiz25.vcxproj" Id="5efde086-8d00-409a-8edc-cf10cb60dfde" />
+  <Project Path="finalTestQuiz26/finalTestQuiz26.vcxproj" Id="5b60f718-eb92-40b4-b526-853791509f3b" />
+  <Project Path="finalTestQuiz27/finalTestQuiz27.vcxproj" Id="0aaf97bb-1cc7-47a1-88a0-71d30b69273a" />
+  <Project Path="finalTestQuiz28/finalTestQuiz28.vcxproj" Id="1b9e5181-8b2a-4d9c-8a17-bc0e5701de7c" />
+  <Project Path="finalTestQuiz29/finalTestQuiz29.vcxproj" Id="fdbe04f3-6121-4ed9-a8e6-40b3eff23fa2" />
   <Project Path="finalTestQuiz3/finalTestQuiz3.vcxproj" Id="0793ae78-22b8-4c90-8103-8fde6df221d4" />
+  <Project Path="finalTestQuiz30/finalTestQuiz30.vcxproj" Id="2f132df0-5099-4e3a-9aa9-45d5ac939f2c" />
+  <Project Path="finalTestQuiz31/finalTestQuiz31.vcxproj" Id="80a3837d-3595-49ef-b9bc-88f214ac3e72" />
+  <Project Path="finalTestQuiz32/finalTestQuiz32.vcxproj" Id="cfedd1ce-32b9-46fe-88e5-6099d1550ec0" />
+  <Project Path="finalTestQuiz33/finalTestQuiz33.vcxproj" Id="78d8df4a-6b73-4e12-ba09-8f0f7601567e" />
+  <Project Path="finalTestQuiz34/finalTestQuiz34.vcxproj" Id="d7d08707-cf24-4eca-9e31-9e132218eb91" />
+  <Project Path="finalTestQuiz35/finalTestQuiz35.vcxproj" Id="c7fdd1d7-1d36-4fe6-af3c-8944bc856e79" />
+  <Project Path="finalTestQuiz4/finalTestQuiz4.vcxproj" Id="8679f383-7417-4bbb-b9bc-f0dbe494f50a" />
+  <Project Path="finalTestQuiz5/finalTestQuiz5.vcxproj" Id="aa89c70a-83e8-4385-91c0-61eb9392f2c8" />
+  <Project Path="finalTestQuiz6/finalTestQuiz6.vcxproj" Id="b2120567-0916-4fd7-9389-629646ec99cd" />
   <Project Path="finalTestQuiz7/finalTestQuiz7.vcxproj" Id="4065b177-2827-4561-817a-0c60f641096d" />
+  <Project Path="finalTestQuiz8/finalTestQuiz8.vcxproj" Id="1c705856-2e6f-4d27-84e3-b69c4b067118" />
 </Solution>

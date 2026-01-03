@@ -136,7 +136,7 @@ int main() {
         students[i] = Student(id, chinese, math, english, physics, chemistry, biology);
     }
 
-    cout << "输入排序方式（1表示按学号排序，2表示按总分排序）。" << endl;
+    //cout << "输入排序方式（1表示按学号排序，2表示按总分排序）。" << endl;
 
     int measure = 0;
 
@@ -175,6 +175,6 @@ int main() {
         }
     }
     else {
-        cout << "输入方法错误！" << endl;
+        //cout << "输入方法错误！" << endl;
     }
 }

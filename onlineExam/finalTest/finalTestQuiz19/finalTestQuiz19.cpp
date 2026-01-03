@@ -1,20 +1,126 @@
-﻿// finalTestQuiz19.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿/*19. 数据的共享与保护（学生记录排序）
+【问题描述】
+从键盘中读入最多不超过50个学生的学生信息（包括空格隔开的姓名、学号、年龄信息，以学号从低到高排序）
+【输入形式】
+每次键盘读入最多不超过50个学生的学生信息：
+第一行为学生人数；
+后面每一行为空格隔开的学生学号、姓名、年龄，其中学号和年龄都是整数。
+【输出形式】
+分别以姓名顺序（从低到高）和年龄顺序（从低到高）将学生信息输出，每行输出一位学生的信息，其中学号占3位，姓名（英文）占6位，年龄占3位，均为右对齐。
+年龄相同时按姓名从低到高排序。两种顺序的输出结果用  一行空行相隔。
+【输入样例】
 
-#include <iostream>
+4
+1 aaa 22
+45 bbb 23
+54 ddd 20
+110 ccc 19
+【输出样例】
 
-int main()
-{
-    std::cout << "Hello World!\n";
+  1     aaa     22
+ 45     bbb     23
+110     ccc     19
+ 54     ddd     20
+110     ccc     19
+ 54     ddd     20
+  1     aaa     22
+ 45     bbb     23
+【样例说明】
+从键盘输入四个学生记录，分别按姓名和年龄排序并输出。*/
+#include<iostream>
+#include<string>
+#include<vector>
+#include<iomanip>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	vector<int>num(n);
+	vector<string>names(n);
+	vector<int>age(n);
+	vector<int>coutnum1(n);
+	vector<int>coutnum2(n);
+	vector<string>names1(n);
+	vector<string>names2(n);
+	vector<int>age1(n);
+	vector<int>age2(n);
+	for (int i = 0; i < n; i++) {
+		cin >> num[i] >> names[i] >> age[i];
+		coutnum1[i] = num[i];
+		coutnum2[i] = num[i];
+		names1[i] = names[i];
+		names2[i] = names[i];
+		age1[i] = age[i];
+		age2[i] = age[i];
+	}
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n - 1; j++) {
+
+			if (names1[j] > names1[j + 1]) {
+				string temp1 = names1[j];
+				names1[j] = names1[j + 1];
+				names1[j + 1] = temp1;
+
+				int temp2 = coutnum1[j];
+				coutnum1[j] = coutnum1[j + 1];
+				coutnum1[j + 1] = temp2;
+
+				int temp3 = age1[j];
+				age1[j] = age1[j + 1];
+				age1[j + 1] = temp3;
+
+			}
+		}
+	}
+	for (int i = 0; i < n; i++) {
+		cout << setiosflags(ios_base::right) <<
+			setw(3) << coutnum1[i] <<
+			setw(6) << names1[i] <<
+			setw(3) << age1[i] << endl;
+	}
+	cout << endl;
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n - 1; j++) {
+
+			if (age2[j] > age2[j + 1]) {
+				string temp1 = names2[j];
+				names2[j] = names2[j + 1];
+				names2[j + 1] = temp1;
+
+				int temp2 = coutnum2[j];
+				coutnum2[j] = coutnum2[j + 1];
+				coutnum2[j + 1] = temp2;
+
+				int temp3 = age2[j];
+				age2[j] = age2[j + 1];
+				age2[j + 1] = temp3;
+
+			}
+			else if (age2[j] == age2[j + 1]) {
+				if (names2[j] > names2[j + 1]) {
+					string temp1 = names2[j];
+					names2[j] = names2[j + 1];
+					names2[j + 1] = temp1;
+
+					int temp2 = coutnum2[j];
+					coutnum2[j] = coutnum2[j + 1];
+					coutnum2[j + 1] = temp2;
+
+					int temp3 = age2[j];
+					age2[j] = age2[j + 1];
+					age2[j + 1] = temp3;
+
+				}
+			}
+		}
+	}
+	for (int i = 0; i < n; i++) {
+		cout << setiosflags(ios_base::right) <<
+			setw(3) << coutnum2[i] <<
+			setw(6) << names2[i] <<
+			setw(3) << age2[i];
+		if (i != n - 1)cout << endl;
+	}
 }
-
-// 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
-// 调试程序: F5 或调试 >“开始调试”菜单
-
-// 入门使用技巧: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件
