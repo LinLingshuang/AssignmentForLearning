@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="finalTestPortQuiz1/finalTestPortQuiz1.vcxproj" Id="d6118697-3045-4aee-bd6e-230c229b5e59" />
+  <Project Path="finalTestPortQuiz2/finalTestPortQuiz2.vcxproj" Id="70f61da2-a8ba-4745-b2ae-6654a1c91ce0" />
+  <Project Path="finalTestPortQuiz3/finalTestPortQuiz3.vcxproj" Id="e3b352c0-ede1-4768-9b60-6b723a3e60f1" />
+</Solution>
