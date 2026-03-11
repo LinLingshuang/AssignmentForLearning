@@ -3,5 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="finalTestFragmentQuiz1/finalTestFragmentQuiz1.vcxproj" />
+  <Project Path="ConsoleApplication1/ConsoleApplication1.vcxproj" Id="68770939-f6d8-4bd9-99ea-46ba525e01a3" />
+  <Project Path="finalTestFragmentQuiz1/finalTestFragmentQuiz1.vcxproj" Id="863d3c9b-72fe-455d-b2c2-2996d5b848bb" />
 </Solution>

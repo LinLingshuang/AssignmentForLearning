@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\SelfProgramLearning\Chap1Project2.cpp">
+    <ClCompile Include="..\SelfProgramLearning\常量.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

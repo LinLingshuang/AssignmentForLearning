@@ -24,7 +24,7 @@
     <ProjectGuid>{cdaab835-d85b-4c9e-8ace-1ca13e7a2520}</ProjectGuid>
     <RootNamespace>SelfProgramLearning</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Chap1PreLearning</ProjectName>
+    <ProjectName>1字符和基本数据类型</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -124,7 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Chap1Project1.cpp" />
+    <ClCompile Include="字符和基本数据类型.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
