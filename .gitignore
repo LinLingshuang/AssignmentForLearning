@@ -2,7 +2,7 @@
 *.pro.user
 *.pro.user.*
 *.autosave
-#*pro
+*pro
 
 # 编译目录（影子构建）
 build-*/
@@ -14,10 +14,11 @@ build-*/
 
 # ----- Visual Studio 相关 -----
 ## 由VS自动生成的文件
-#*.vcxproj.filters
-#*.vcxproj.user
-#*.sln
-#*.slnx
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.slnx
 *.suo
 *.sdf
 *.opensdf
@@ -101,10 +102,10 @@ Desktop.ini
 
 # --- 新增规则 ---
 # IDE/构建系统生成的特定文件
-#*.slnx
-#*project.json
-#*project.json.user
-#*.idx
+*.slnx
+*project.json
+*project.json.user
+*.idx
 
 # Qt/qmake 自动生成的 Makefile 变体
 Makefile.Debug
