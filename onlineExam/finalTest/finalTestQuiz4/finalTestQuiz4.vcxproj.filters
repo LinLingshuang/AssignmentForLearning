@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="finalTestQuiz4.cpp">
+    <ClCompile Include="4. 求π的值.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

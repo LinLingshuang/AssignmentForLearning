@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="finalTestQuiz29.cpp" />
+    <ClCompile Include="29. 定义Boat与Car两个类，定义一个友元函数计算二者的重量和.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

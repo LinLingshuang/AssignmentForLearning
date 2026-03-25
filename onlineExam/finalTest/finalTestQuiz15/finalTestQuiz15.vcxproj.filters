@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="finalTestQuiz15.cpp">
+    <ClCompile Include="声明一个Employee类，包括name、ID、Salary等属性，以及chan.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

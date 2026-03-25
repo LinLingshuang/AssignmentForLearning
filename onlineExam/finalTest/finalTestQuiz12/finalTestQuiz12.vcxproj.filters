@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="finalTestQuiz12.cpp">
+    <ClCompile Include="12.旧版交叉引用.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

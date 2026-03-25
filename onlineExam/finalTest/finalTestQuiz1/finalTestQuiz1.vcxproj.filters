@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="finalTestQuiz1.cpp">
+    <ClCompile Include="1. 单词出现次数查找.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

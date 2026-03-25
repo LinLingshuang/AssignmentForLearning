@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="finalTestQuiz29.cpp">
+    <ClCompile Include="29. 定义Boat与Car两个类，定义一个友元函数计算二者的重量和.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

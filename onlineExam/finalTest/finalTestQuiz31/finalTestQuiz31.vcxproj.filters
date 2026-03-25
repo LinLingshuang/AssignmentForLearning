@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="finalTestQuiz31.cpp">
+    <ClCompile Include="31. 定义一个Circle类，计算圆的面积。.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

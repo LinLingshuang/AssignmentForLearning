@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="finalTestQuiz32.cpp">
+    <ClCompile Include="32. 编写递归函数计算x^y.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

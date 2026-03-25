@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="finalTestQuiz30.cpp">
+    <ClCompile Include="30. 字符串处理-删除重复字符.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

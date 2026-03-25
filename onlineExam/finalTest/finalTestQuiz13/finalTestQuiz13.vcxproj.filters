@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="finalTestQuiz13.cpp">
+    <ClCompile Include="13. 使用栈检测字符串中括号是否匹配.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="finalTestQuiz24.cpp">
+    <ClCompile Include="24. 链表的创建和节点删除.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

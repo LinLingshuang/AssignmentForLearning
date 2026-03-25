@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="finalTestQuiz28.cpp">
+    <ClCompile Include="28. 最小的N个数之和.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
